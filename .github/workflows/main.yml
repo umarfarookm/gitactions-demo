@@ -19,10 +19,10 @@ jobs:
 
       - name: Install and build
         working-directory: gitactions-demo
-        run: npm install && npm run build && cp dist/git-actions/index.html
+        run: npm install && npm run build && cp gitactions-demo/dist/git-actions/index.html
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: gitactions-demo/dist/angular-crash # The folder the action should deploy.
+          branch: main # The branch the action should deploy to.
+          folder: gitactions-demo/dist/git-actions # The folder the action should deploy.

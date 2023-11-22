@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Install and build
-        working-directory: gitactions-demo
+        working-directory: ./gitactions-demo
         run: npm install && npm run build && cp dist/git-actions/index.html
 
       - name: Deploy

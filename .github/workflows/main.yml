@@ -19,7 +19,7 @@ jobs:
 
       - name: Install and build
         working-directory: ./gitactions-demo
-        run: npm install && npm run build && cp dist/git-actions/index.html
+        run: npm install && npm run build && cp dist/git-actions/index.html dist/git-actions/404.html
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
